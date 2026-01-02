@@ -1,12 +1,12 @@
 *{
-    list-style: none;
-    text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
 
@@ -14,8 +14,8 @@
 :root{
     --green-color: #3cb815;
     --light-green-color: #c0eb7b;
-    --orange-color: ;
-    --light-orange-color: #ff7e00;
+    --orange-color:#ff7e00 ;
+    --light-orange-color: #f75f1d;
     --text-color :#1a2428 ;
     --bg-colo: #fff;
 }
@@ -75,5 +75,44 @@ header{
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
 }
+.logo .bx{
+    font-size: 24px;
+    color:var(--orange-color);
+}
+
+.navbar{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navbar a{
+    font-size:1rem ;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+}
+.navbar a:hover, .navbar .home-active{
+  background: var(--green-color); 
+  border-radius: 5rem;
+  color: var(--bg-color);  
+  transition: background-color 0.5s ease;
+
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100001; 
+    display : none;
+}
+
+
+/* section */
+section{
+    padding: 4.5rem 0 0.5rem;
+}
+

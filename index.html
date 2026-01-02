@@ -11,6 +11,9 @@
     <!-- Icons box  -->
      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     
 </head>
 <body>
@@ -18,8 +21,12 @@
      <header>
         <a href="#" class="logo"><i class='bx  bxs-basket'></i> </a>
 
+        <!-- manu icon -->
+         <div class="bx bx-menu" id="menu-icon"></div>
+
+
         <!-- Nav list -->
-         <ul>
+         <ul class="navbar">
             <li><a href="#home" class="home-active">Home</a></li>
             <li><a href="#categories">Categories</a></li>
             <li><a href="#products">Products</a></li>
@@ -30,14 +37,19 @@
          <!-- profile -->
           <div class="profile">
             <img src="./assests/salad.jpg" alt="not image">
-            <span>abdus Rahman</span>
+            <span>Salad</span>
             <i class='bx  bxs-caret-big-down'></i> 
           </div>
      </header>
 
+     <!-- home -->
+      <section class="home" id="home"></section>
+
+      
 
 
-
+     <!-- link to JS -->
     <script src="./script.js"></script>
+    
 </body>
 </html>
